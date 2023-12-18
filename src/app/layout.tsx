@@ -1,12 +1,7 @@
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
 import '../../public/globals.css'
 import { Providers }from './providers/providers'
-
-const poppins = Poppins({
-  weight: '400',
-  subsets: ['latin'],
-})
+import { fonts } from '../lib/fonts'
 
 export const metadata: Metadata = {
   title: 'Lycooper',
@@ -19,9 +14,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" className={poppins.className}>
+    <html lang="pt-BR" className={fonts.poppins.variable}>
       <body className="flex flex-col min-h-screen">
-        <Providers>
+        <Providers >
           {children}
         </Providers>
       </body>
