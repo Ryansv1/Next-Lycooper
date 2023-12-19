@@ -23,7 +23,7 @@ useEffect(() =>{
 
     return(
     <>
-        <nav className="fixed flex flex-row justify-between items-center min-w-full p-8">
+        <nav className="fixed flex flex-row justify-between items-center min-w-full p-8 z-20">
             <Image src="/imgs/logo.png" alt="Lycooper"width={200} height={50} />
             <Button  onClick={onOpen}>Menu</Button>
             <Drawer

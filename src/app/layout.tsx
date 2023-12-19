@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={fonts.poppins.variable}>
-      <body className="flex flex-col min-h-screen font-poppins">
+      <body className="flex flex-col min-h-screen font-poppins relative">
         <Providers>
           {children}
         </Providers>
