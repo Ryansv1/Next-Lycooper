@@ -23,7 +23,7 @@ useEffect(() =>{
 
     return(
     <>
-        <nav className="fixed flex flex-row justify-between items-center min-w-full p-8 z-20">
+        <nav className="fixed flex flex-row justify-between items-center min-w-full p-8 z-20 bg-blue-950">
             <Image src="/imgs/logo.png" alt="Lycooper"width={200} height={50} />
             <Button  onClick={onOpen}>Menu</Button>
             <Drawer
@@ -44,13 +44,13 @@ useEffect(() =>{
                                 <Link href="/dashboard">Tela Inicial</Link>
                             </Button>
                             <Button>
-                                <Link href="/sensores">Sensores</Link>
+                                <Link href="/dashboard/sensores">Sensores</Link>
                             </Button>
                             <Button>
-                                <Link href="/historico">Histórico de Coleta</Link>
+                                <Link href="/dashboard/historico">Histórico de Coleta</Link>
                             </Button>
                             <Button>
-                                <Link href="/configuracoes">Configurações</Link>
+                                <Link href="/dashboard/configuracoes">Configurações</Link>
                             </Button>
                         </Flex>
                     </DrawerBody>
@@ -59,7 +59,7 @@ useEffect(() =>{
 
                     </DrawerFooter>
                 </DrawerContent>
-            </Drawer>
+            </Drawer>            
         </nav>
     </>
     )
