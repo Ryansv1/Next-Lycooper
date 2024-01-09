@@ -58,7 +58,7 @@ return (
         },
         elements:{
             point:{
-                pointStyle: 'triangle',
+                pointStyle: 'rectRot',
                 backgroundColor: '#FFFFFF'
             }
         },
@@ -70,7 +70,7 @@ return (
             legend: {
                 display: true,
                 labels:{
-                    color: '#FFFFFF',
+                    color: '#000000',
                 
                 }
             }
